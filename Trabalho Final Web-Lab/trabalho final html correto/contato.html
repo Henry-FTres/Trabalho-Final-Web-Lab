@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+    <link rel="shortcut icon" href="favicon/contact me.ico" type="image/x-icon"> <!--ícones-->
+</head>
+<body class="pagina-contato">
+    
+    <header>
+        <div class="divimgcabe">
+            <img src="img/cabeçalho.jpg" class="imgcabeçalho">
+            <h1 class="tc1">cyber</h1>
+            <h1 class="tc2">segu</h1>
+            <h1 class="tc3">rança</h1>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="menu">Sobre</a>
+            <a href="conteudo.html" class="menu">Cybersegurança</a>
+            <a href="contato.html" class="menu">Contato</a>
+            <button onclick="toggleTheme()" class="menu-button">
+                <div class="div-lua"><i class="ph ph-moon"></i></div>
+            </button>
+            <button class="btn-acessibilidade" onclick="aumentarFonte()">A+ Acessibilidade
+            <div id="statusAcessibilidade"></div>
+            </button>
+        </nav>
+    <div class="contato-container">
+        <h1 class="contato-titulo">Entre em Contato</h1>
+        <form class="contato-form" action="#" method="post"> <!-- Início do formulário com classe própria; "#" significa que ainda não tem destino definido --><!-- method="post" envia os dados de forma oculta na URL -->
+            <label class="contato-label" for="nome">Nome:</label>
+            <input class="contato-input" type="text" id="nome" name="nome">
+
+            <label class="contato-label" for="email">E-mail:</label>
+            <input class="contato-input" type="email" id="email" name="email">
+
+            <label class="contato-label" for="assunto">Assunto:</label>
+            <input class="contato-input" type="text" id="assunto" name="assunto">
+
+            <label class="contato-label" for="mensagem">Mensagem:</label>
+            <textarea class="contato-textarea" id="mensagem" name="mensagem" rows="5" ></textarea>
+
+            <a href="construcao.html" class="contato-botao">Enviar</a>
+        </form>
+    </div>
+     <footer class="rodape">
+    <p class="textorodape">&copy; 2025 Henrique Sigolin Ferri, Henry Afonso Fiorentin Tres e Manuela Larissa Stivanin. </p><br>
+    <p>Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

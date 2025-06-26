@@ -1,0 +1,464 @@
+/* ------------------ PARTE HENRIQUE ------------------ */
+
+/*tema claro*/
+:root {
+  --color-bg: #f2f2f2; /*background*/
+  --color-text: #000000;
+  --color-header-bg: rgb(6, 23, 107);
+  --color-header-text: #ffffff;
+  --color-header-hover: rgb(99, 40, 207);
+  --color-box-border: rgb(75, 71, 71);
+  --color-box-bg: #ffffff;
+  --color-button-bg: rgb(6, 23, 107);
+  --color-button-hover: #0b16d8;
+  --color-link: black;
+  --color-label: #444;
+  --color-title: #333;
+  --color-shadow: rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode {
+  --color-bg: #121212;
+  --color-text: #f2f2f2;
+  --color-header-bg: #0d1b4d;
+  --color-header-text: #e0e0e0;
+  --color-header-hover: #5c2ab5;
+  --color-box-border: #888;
+  --color-box-bg: #1e1e1e;
+  --color-button-bg: #1f3ba8;
+  --color-button-hover: #4d66ff;
+  --color-link: #dddddd;
+  --color-label: #bbbbbb;
+  --color-title: #dddddd;
+  --color-shadow: rgba(255, 255, 255, 0.15);
+}
+
+/* ------------------ PARTE MANUELA ------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*O tamanho inclui tudo: conteúdo, padding e borda.*/
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /*Ela impede que a rolagem horizontal*/
+  position: fixed;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.imgcabeçalho {
+  width: 100%;
+  height: 31.25rem; 
+}
+
+.tc1, .tc2, .tc3 {
+  position: absolute;
+  font-size: 700%;
+  margin-left: 5%;
+  color: white;
+  text-shadow: 0.3125rem 0.3125rem 0 rgba(255, 255, 255, 0.658); 
+}
+
+.tc1 { top: 8%; }
+.tc2 { top: 20%; }
+.tc3 { top: 32%; }
+
+nav {
+  color: var(--color-header-text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+  background-color: var(--color-header-bg);
+  box-sizing: border-box;
+  flex-wrap: wrap; /*Permite que os itens dentro de um container quebrem linha*/
+  display: flex; /*facilita alinhar e distribuir elementos dentro de um conteiner (horizontal ou verticalmente)*/
+  justify-content: center; /*Centraliza horizontalmente os itens dentro do container flex.*/
+  text-align: center; /*Centraliza o texto dentro dos elementos filhos.*/
+  position: sticky;
+  margin-top: -2.0%;
+}
+
+nav a {
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 2.8125rem; 
+  color: var(--color-header-text);
+  padding: 0.1875rem; 
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  background-color: var(--color-header-hover);
+  border-radius: 0.4375rem; 
+  transform: scale(1.05);
+}
+
+.titulosobre {
+  font-optical-sizing: auto; /* ajusta automaticamente o estilo da fonte como espessura e contraste com base no tamanho do texto.*/
+  font-style: normal;
+  text-align: center;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  font-size: 500%;
+}
+
+.imghenrique, .imghenry, .imgmanu {
+  width: 25rem;  
+  height: 25rem; 
+  border-radius: 50%;
+  object-fit: cover; /*controla como imagens ou vídeos se ajustam ao espaço do elemento*/
+  box-shadow: 0.3125rem 0.3125rem 0.8125rem 0 var(--color-shadow); 
+}
+
+.sectionimgsobre {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  gap: 4%; /*espaço entre as imagens*/
+}
+
+.divimgsobre {
+  max-width: 56.25rem; 
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 250%;
+}
+
+.divimgsobre a {
+  color: var(--color-link);
+}
+
+/* ---------------------------- PARTE HENRY ---------------------------- */
+
+.div-lua {
+  scale: 2.4;
+  margin-top: 14%;
+}
+
+.titulo-conteudo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 2.5rem; 
+  font-size: 2.1875rem; 
+  padding-bottom: 1.875rem; 
+}
+
+.conteudo-conteudo {
+  text-align: justify;
+  max-width: 81.25rem; 
+  font-size: 1.5625rem; 
+}
+
+.conteudo-conteudo p {
+  text-indent: 2em; /*cria um recuo na primeira linha de um parágrafo*/
+}
+
+.blocotexto-conteudo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2.5rem; 
+}
+
+.section-blocos {
+  border: 0.125rem solid var(--color-box-border); 
+  max-width: 81.25rem; 
+  text-align: justify;
+  padding: 1.25rem;
+  margin: 1.25rem auto; 
+  border-radius: 0.625rem; 
+  font-size: 1.25rem;
+  background-color: var(--color-box-bg);
+  box-shadow: 0.3125rem 0.3125rem 0.8125rem 0 var(--color-shadow); 
+}
+
+.div-blocos {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.875rem; 
+}
+
+.mensagem-final-conteudo {
+  display: flex;
+  max-width: 62.5rem; 
+  text-align: center;
+  margin: 1.25rem auto; 
+}
+
+.section-blocos i {
+  scale: 1.5;
+  padding: 0.625rem;
+  margin-bottom: 0.75rem; 
+}
+
+.div-blocos2 {
+  text-indent: 2em; /*recuo*/
+}
+
+.div-sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.0625rem; 
+}
+
+.foto-sobre {
+  width: 28.125rem; 
+  border-radius: 0.625rem; 
+  box-shadow: 0.3125rem 0.3125rem 0.8125rem 0 var(--color-shadow); 
+}
+
+.section-fotosobre {
+  margin-left: 1.875rem; 
+  margin-right: 1.25rem; 
+}
+
+.conteudo-sobre {
+  display: flex;
+  text-align: justify;
+  font-size: 1.125rem; 
+  width: 28.125rem; 
+  height: 28.125rem; 
+  text-indent: 2em;
+  margin-right: 1.25rem; 
+  border: 0.125rem solid var(--color-box-border); 
+  border-radius: 0.625rem; 
+  background-color: var(--color-box-bg);
+  box-shadow: 0.3125rem 0.3125rem 0.8125rem 0 var(--color-shadow); 
+  align-items: center;
+}
+
+.conteudo-sobre p {
+  margin: 1.875rem; 
+}
+
+.redessociais-sobre {
+  border: 0.125rem solid var(--color-box-border); 
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem; 
+  margin: 1.25rem auto; 
+  border-radius: 0.625rem; 
+  background-color: var(--color-box-bg);
+  box-shadow: 0.3125rem 0.3125rem 0.8125rem 0 var(--color-shadow); 
+  font-size: 1.25rem; 
+  width: 28.125rem; 
+  height: 28.125rem;
+  margin-right: 1.875rem; 
+}
+
+.h1-redessociais {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1.25rem; 
+  scale: 1.25;
+}
+
+.imagenstexto-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  scale: 1.25;
+}
+
+.section-maior {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  gap: 4%
+}
+
+.titulo-mainsobre {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 12.5rem;
+  font-size: 2.1875rem; 
+  padding-bottom: 1.875rem;
+  flex-direction: column;
+}
+
+.titulo-mainsobre a {
+  color: var(--color-link);
+}
+
+.img-manutencao img {
+  width: 34.375rem; 
+  height: 34.375rem; 
+}
+
+.manutenção {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-manutencao {
+  font-size: 2.0625rem; 
+  font-weight: bold;
+  margin-top: -3.125rem; 
+  margin-bottom: 1.5625rem; 
+}
+
+.voltar-manutencao {
+  text-decoration: none;
+  border: 0.1875rem solid var(--color-box-border); 
+  padding: 0.5625rem; 
+  border-radius: 0.375rem; 
+  font-size: 1.375rem; 
+  background-color: var(--color-box-bg);
+  box-shadow: 0.3125rem 0.3125rem 0.8125rem 0 var(--color-shadow); 
+}
+
+.voltar-manutencao a {
+  text-decoration: none;
+  color: var(--color-link);
+  font-weight: bold;
+}
+
+
+.btn-acessibilidade {
+  position: fixed;
+  top: 1.25rem;      
+  right: 1.25rem;    
+  z-index: 1000; /*Quanto maior o valor do z-index, mais "por cima" o elemento aparece na tela, quando elementos se sobrepõem.*/
+  padding: 0.625rem 0.9375rem;  
+  font-size: 0.875rem;          
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;       
+  cursor: pointer; /*vira uma mãozinha*/
+  margin-right: 0.8%;
+}
+
+.btn-acessibilidade:hover {
+  background-color: #555;
+}
+
+/* Estilo base para aumentar dinamicamente */
+body {
+  font-size: 100%;             
+  transition: font-size 0.3 sease; /* Aplica uma transição suave de 0.3 segundos ao mudar o tamanho da fonte */
+}
+
+#statusAcessibilidade {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  transition: opacity 0.3s; /* Aplica uma transição suave de 0.3 segundos quando a opacidade for alterada */
+}
+
+/* ---------------------------- PARTE MANUELA ---------------------------- */
+
+.rodape {
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
+  text-align: center;
+  padding: 1.25rem; 
+  font-family: Arial, sans-serif;
+  margin-top: 2.5rem; 
+  height: 15.625rem; 
+}
+
+.textorodape {
+  margin-top: 2.5rem; 
+}
+
+.pagina-contato {
+  background-color: var(--color-bg);
+  margin: 0;
+  padding: 0;
+}
+
+.contato-container {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 40px;
+  font-style: normal;
+  max-width: 37.5rem; 
+  background-color: var(--color-box-bg);
+  padding: 1.875rem;
+  margin: 3.125rem auto; 
+  box-shadow: 0.3125rem 0.3125rem 0.8125rem 0 var(--color-shadow); 
+  border-radius: 0.5rem; 
+}
+
+.contato-titulo {
+  text-align: center;
+  margin-bottom: 1.25rem; 
+  font-size: 1.75rem; 
+  color: var(--color-title);
+}
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-label {
+  margin-bottom: 0.5rem; 
+  font-weight: bold;
+  color: var(--color-label);
+}
+
+.contato-input,
+.contato-textarea {
+  width: 100%;
+  padding: 0.625rem; 
+  margin-bottom: 1.25rem; 
+  border: 1px solid #ccc;
+  border-radius: 0.25rem; 
+  box-sizing: border-box;
+  font-size: 1rem; 
+}
+
+.contato-textarea {
+  resize: vertical; /*O usuário pode arrastar a parte inferior da caixa de texto para aumentar ou diminuir a altura.*/
+}
+
+.contato-botao {
+  width: 100%;
+  background-color: var(--color-button-bg);
+  color: var(--color-header-text);
+  border: none;
+  padding: 0.75rem; 
+  font-size: 1rem; 
+  border-radius: 0.25rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contato-botao:hover {
+  background-color: var(--color-button-hover);
+}
+
+.menu-button {
+  color: white;
+  border: none;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 2.8125rem; 
+  padding: 0.1875rem; 
+  width: 2.5rem; 
+  background: transparent;
+  text-decoration: none;
+}
+
+.menu-button:hover {
+  color: white;
+  background-color: var(--color-header-hover);
+  border-radius: 0.4375rem; 
+  transform: scale(1.05);
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <link rel="stylesheet" href="css/styles.css"> <!--css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Importa os ícones da biblioteca Font Awesome -->
+    <link rel="shortcut icon" href="favicon/about me.ico" type="image/x-icon">  <!-- shortcut icon = Ícone da aba do navegador -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--preconect: informa ao navegador que ele pode iniciar uma conexão antecipada com o servidor indicado na URL, antes mesmo de precisar efetivamente carregar recursos desse servidor. É uma técnica de otimização de desempenho que ajuda a página a carregar mais rápido.-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Aceleram o carregamento das fontes do Google. Reduzem o tempo total de renderização da sua página. Ele precisa do atributo crossorigin porque o navegador vai fazer uma requisição CORS (Cross-Origin Resource Sharing) para buscar a fonte.-->
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet"> <!-- Fonte personalizada do Google Fonts -->
+    <!-- Importa ícones da biblioteca Phosphor (sol e lua)-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+</head>
+<body>
+    <header id="topo">
+        <div class="divimgcabe">
+            <img src="img/cabeçalho.jpg" class="imgcabeçalho">
+            <h1 class="tc1">cyber</h1>
+            <h1 class="tc2">segu</h1>
+            <h1 class="tc3">rança</h1>
+        </div>
+        <nav >
+            <a href="index.html" class="menu">Sobre</a>
+            <a href="conteudo.html" class="menu">Cybersegurança</a>
+            <a href="contato.html" class="menu">Contato</a>
+            <button onclick="toggleTheme()" class="menu-button">
+                <div class="div-lua"><i class="ph ph-moon"></i></div>
+            </button>
+            <button class="btn-acessibilidade" onclick="aumentarFonte()">A+ Acessibilidade
+            <div id="statusAcessibilidade"></div>
+            </button>
+        </nav>
+    </header>
+    <main class="main-sobre">
+        <section>
+            <div>
+                <h1 class="titulosobre">Quem somos</h1>
+            </div>
+        </section>
+        <section class="sectionimgsobre">
+            <div class="divimgsobre">
+                <img src="img/henrique.jpg" alt="Henrique Sigolin Ferri" class="imghenrique">
+                <h3>Henrique Sigolin Ferri</h3>
+                <a href="#sobre-henrique">
+                    <h6>Conheça-me <i class="fa-solid fa-square-up-right"></i></h6>
+                </a>
+            </div>
+            <div class="divimgsobre">
+                <img src="img/henry.jpg" alt="Henry Afonso Fiorentin Tres" class="imghenry">
+                <h3>Henry Afonso Fiorentin Tres</h3>
+                <a href="#sobre-henry">
+                    <h6>Conheça-me <i class="fa-solid fa-square-up-right"></i></h6>
+                </a>
+            </div>
+            <div class="divimgsobre">
+                <img src="img/manu.jpg" alt="Manuela Larissa Stivanin" class="imgmanu">
+                <h3>Manuela Larissa Stivanin</h3>
+                <a href="#sobre-manu">
+                    <h6>Conheça-me <i class="fa-solid fa-square-up-right"></i></h6>
+                </a>
+            </div>
+        </section>
+        <section class="titulo-mainsobre">
+            <h1 id="sobre-henrique" >Henrique Sigolin Ferri</h1>
+            <a href="#topo">Topo <i class="fa-solid fa-square-up-right"></i></a>
+        </section>
+        <section class="section-maior">
+            <div class="div-sobre">
+                <section class="section-fotosobre">
+                    <img class="foto-sobre" src="img/henrique.jpg" alt="Henrique Sigolin Ferri">
+                </section>
+                <section class="section-sobre">
+                    <div class="conteudo-sobre">
+                        <p>
+                            Opa, meu nome é Henrique e vou falar um pouco sobre mim. Sou apaixonado por futebol e torço pro grêmio. Nas horas vagas, gosto sair para festas, normalmente vou para Marau ou Passo Fundo aonde tem o ramblas em Marau e também às vezes vou para destilaria em Casca que também é muito bom umas das melhores da região na minha opinião.
+                            Outra coisa que eu gosto, principalmente no computador. Um dos meus favoritos é o CS:GO, onde é um jogo de tiro onde seu objetivo é ganhar 14 rounds e depois disso a partida acaba aonde pomdemos começar ct ou tr aonde o tr tem objetivo de plantar a bomba em que tem 2 bombs e o tr tem que plantar em um deles ai ele ganha o round e o ct e nao deixar os tr envadirem o seu bomb e protejer ate acabar o tempo ou matar todos os terroristas ai acaba um round ate inverter os lados e depois disso quem conseguir ter uma tatica melhor vence ate chegar nos 14 rounds. E para completar minha comida favorita e hambúrguer.
+                        </p>
+                    </div>
+                </section>
+                <section class="redessociais-sobre">
+                    <div class="h1-redessociais">
+                        <h1>Redes Sociais</h1>
+                    </div>
+                    <div class="imagenstexto-sociais">
+                        <table>
+                            <tr class="tr-tabela">
+                                <td><a href="https://www.instagram.com/henrique_ferri_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>  Instagram</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/Henrique66234" target="_blank"><i class="fa-brands fa-github"></i></a>   GitHub</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://wa.me/5554997061082?text=Olá, Henrique!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>   WhatsApp</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDXmclMmsngwwXzQHKNlBvJzcstKXDmnHgzBxDQDqkwKcZgRgQScqPQtChPXKNkpFnlFchN" target="_blank"><i class="fa-solid fa-envelope"></i></a>   Gmail</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="titulo-mainsobre">
+            <h1 id="sobre-henry">Henry Afonso Fiorentin Tres</h1>
+            <a href="#topo">Topo <i class="fa-solid fa-square-up-right"></i></a>
+        </section>
+        <section class="section-maior">
+            <div class="div-sobre">
+                <section class="section-fotosobre">
+                    <img class="foto-sobre" src="img/henry.jpg" alt="Henry Afonso Fiorentin Tres">
+                </section>
+                <section class="section-sobre">
+                    <div class="conteudo-sobre">
+                        <p>
+                            Olá, me chamo Henry Afonso Fiorentin Tres, tenho 18 anos e nasci na cidade de Rondinha-RS. Atualmente estou cursando Ciência da Computação, na UPF - Passo Fundo, e trabalhando em Suporte de Sistemas Informatizados. Desde pequeno, tenho grande afinidade e interesse pela tecnologia, o que pesou bastante na escolha do curso, mas também foi minha escolha por conta do vasto mercado de trabalho. Meus hobbies condizem com a escolha do meu curso… Gosto bastante de ocupar meu tempo livre com jogos, vídeos e, atualmente, estou precisando aprender a gostar de estudar pra poder dar um rumo a minha vida. Além do interesse por jogos e vídeos, costumava jogar vôlei de quadra e de areia, porém com o aumento de compromissos e responsabilidades, acabei por deixando de lado… Tenho bastante interesse em carros, além de sair com meus amigos, quando possível.
+                        </p>
+                    </div>
+                </section>
+                <section class="redessociais-sobre">
+                    <div class="h1-redessociais">
+                        <h1>Redes Sociais</h1>
+                    </div>
+                    <div class="imagenstexto-sociais">
+                        <table>
+                            <tr class="tr-tabela">
+                                <td><a href="https://www.instagram.com/henryftres/" target="_blank"><i class="fa-brands fa-instagram"></i></a>  Instagram</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/Henry-FTres" target="_blank"><i class="fa-brands fa-github"></i></a>   GitHub</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.facebook.com/henry.afonso.18/" target="_blank"><i class="fa-brands fa-facebook"></i></a>   Facebook</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.youtube.com/@swaggerrr_6697" target="_blank"><i class="fa-brands fa-youtube"></i></a>   YouTube</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://wa.me/5554999362212?text=Olá, Henry!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>   WhatsApp</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTKWVNLfPpKctsGmpJNsxmgRXtTGLcNRtfJfsgzHRJjSVkkBjwvKnkFxJgVVtHrsHNVllq" target="_blank"><i class="fa-solid fa-envelope"></i></a>   Gmail</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="titulo-mainsobre">
+            <h1 id="sobre-manu" >Manuela Larissa Stivanin</h1>
+            <a href="#topo">Topo <i class="fa-solid fa-square-up-right"></i></a>
+        </section>
+        <section class="section-maior">
+            <div class="div-sobre">
+                <section class="section-fotosobre">
+                    <img class="foto-sobre" src="img/manu.jpg" alt="Manuela Larissa Stivanin">
+                </section>
+                <section class="section-sobre">
+                    <div class="conteudo-sobre">
+                        <p>
+                            Olá, me chamo Manuela Larissa Stivanin, sou estudante de ciência da Computação do primeiro semestre na Universidade de Passo Fundo. Venho do interior de uma cidade muito pequena do Rio Grande do Sul chamada Rondinha. Sou gremista, apaixonada por matemática desde muito nova e agora sou apaixonada pela tecnologia. Tenho algumas premiações nacionais em matemática, gosto muito de estar constantemente adquirindo conhecimento, por conta disso estou sempre buscando conteúdos para agregarem algo. Dentre os meus hobbies favoritos estão assistir filmes e séries, ler, jogar jogos de mesa e tocar violão. Também gosto muito de passar tempo com a minha família e amigos, e estar no interior em contato com a natureza.
+                        </p>
+                    </div>
+                </section>
+                <section class="redessociais-sobre">
+                    <div class="h1-redessociais">
+                        <h1>Redes Sociais</h1>
+                    </div>
+                    <div class="imagenstexto-sociais">
+                        <table>
+                            <tr class="tr-tabela">
+                                <td><a href="https://www.instagram.com/manuela_stivanin/" target="_blank"><i class="fa-brands fa-instagram"></i></a>  Instagram</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/Manuela-LStivanin" target="_blank"><i class="fa-brands fa-github"></i></a>   GitHub</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.facebook.com/manuela.stivanin.39" target="_blank"><i class="fa-brands fa-facebook"></i></a>   Facebook</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://wa.me/5554999627212?text=Olá, Manuela!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>   WhatsApp</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRsnxFZSThkfGJpvczhhNxShcGWkjZtlFWJNDZwXjCZrDBpkWRHlqDbwQzRvqPPfQlhdskV" target="_blank"><i class="fa-solid fa-envelope"></i></a>   Gmail</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+    <p class="textorodape">&copy; 2025 Henrique Sigolin Ferri, Henry Afonso Fiorentin Tres e Manuela Larissa Stivanin. </p><br>
+    <p>Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
